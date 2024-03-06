@@ -156,6 +156,45 @@ files = [
 ]
 
 [[package]]
+name = "pystache"
+version = "0.6.5"
+description = "Mustache for Python"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pystache-0.6.5-py3-none-any.whl", hash = "sha256:84546278219431f1a2ecc86a627cc1b0fe3c83b5612f8a7d9c81ea0119ac8f49"},
+    {file = "pystache-0.6.5.tar.gz", hash = "sha256:9f238d5a06f18843e0d491d8e4e292dc03fed6a54cb0a5c34be37a3faa973174"},
+]
+
+[package.extras]
+cov = ["coverage", "coverage-python-version"]
+doc = ["recommonmark", "sphinx", "sphinx-git", "sphinx-rtd-theme", "sphinxcontrib-apidoc"]
+test = ["pytest", "pytest-cov"]
+
+[[package]]
+name = "static"
+version = "1.1.1"
+description = "Serve static or templated content via WSGI or stand-alone."
+optional = false
+python-versions = "*"
+files = [
+    {file = "static-1.1.1.tar.gz", hash = "sha256:4a2dfc165c9242304b117e80fb200eb62742a1c51dbaac50451419dccee76395"},
+]
+
+[package.dependencies]
+pystache = "*"
+
+[[package]]
+name = "website"
+version = "1.1"
+description = "HTML to HTML transformer"
+optional = false
+python-versions = "*"
+files = [
+    {file = "website-1.1.tar.gz", hash = "sha256:567a72bd78cd954a99a0afa8d4fddf5360025e3e9527f236e2993f421d747f2e"},
+]
+
+[[package]]
 name = "werkzeug"
 version = "3.0.1"
 description = "The comprehensive WSGI web application library."
@@ -175,4 +214,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "316d2970a8a78e6f3227f6895608b8268149395321209809cdc0fea2ccf2151a"
+content-hash = "35166b0bf7cfd2535844e599e247b64f16987e3e8d4770db38e9aca846b46353"

@@ -9,6 +9,8 @@ packages = [{include = "repl_nix_portfolio_website"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 flask = "^3.0.2"
+website = "^1.1"
+static = "^1.1.1"
 
 
 [build-system]

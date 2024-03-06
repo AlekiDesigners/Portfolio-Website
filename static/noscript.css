@@ -1,0 +1,79 @@
+/* noscript.css */
+
+/* Styles for the no-js-warning div */
+.no-js-warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the nav links */
+#nav ul.links {
+    display: block;
+    text-align: center;
+}
+
+#nav ul.links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#nav ul.links li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#nav ul.links li.active a {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Styles for the icons */
+#nav ul.icons {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#nav ul.icons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#nav ul.icons li a {
+    color: #333;
+}
+
+/* Styles for the featured post */
+.post.featured .image {
+    display: none;
+}
+
+/* Styles for the posts */
+.posts article {
+    margin-bottom: 40px;
+}
+
+.posts article .image {
+    display: none;
+}
+
+/* Styles for the footer */
+#footer .split section {
+    margin-bottom: 20px;
+}
+
+#footer .split section ul.icons {
+    display: block;
+    text-align: center;
+}
+
+#footer .split section ul.icons li {
+    display: inline-block;
+    margin: 0 5px;
+}

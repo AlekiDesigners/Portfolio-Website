@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 {% block title %}Alex in Focus{% endblock %}
 {% block content %}
+<div class="logo-image">
+    <img src="{{ url_for('static', filename='images/cover1.jpg') }}" alt="Alex In Focus" />
+</div>
 <div class="home">
     <div id="intro">
         <p>I'm a data analyst adept in SQL, Python, Tableau, and Excel, delivering insights that drive informed decisions</p>
@@ -19,6 +22,7 @@
         <ul class="links">
             <li class="active"><a href="{{ url_for('home') }}">Projects</a></li>
             <li><a href="{{ url_for('about') }}">About Me</a></li>
+            <li><a href="#footer" class="button">Contact Me</a></li>
         </ul>
         <ul class="icons">
             <li><a href="https://www.linkedin.com/in/alexkwayne/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -66,6 +70,8 @@
             </article>
         </section>
     </div>
+
+    {% include "footer.html" %}
 </div>
 {% endblock %}
 

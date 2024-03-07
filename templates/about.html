@@ -5,6 +5,9 @@
     <!-- Header -->
     <header id="header">
         <a href="{{ url_for('home') }}" class="logo">Data Analyst</a>
+      <div class="logo-image">
+          <img src="{{ url_for('static', filename='images/about1.jpg') }}" alt="Alex In Focus" />
+      </div>
     </header>
 
     <!-- Nav -->
@@ -12,6 +15,7 @@
         <ul class="links">
             <li><a href="{{ url_for('home') }}">Projects</a></li>
             <li class="active"><a href="{{ url_for('about') }}">About Me</a></li>
+            <li><a href="#footer" class="button">Contact Me</a></li>
         </ul>
         <ul class="icons">
             <li><a href="https://www.linkedin.com/in/alexkwayne/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -37,6 +41,8 @@
             <p>Join me as we navigate the dynamic landscape of data analysis, harnessing its power to uncover opportunities, unravel challenges, and make a lasting impact.</p>
         </section>
     </div>
+
+    {% include "footer.html" %}
 </div>
 {% endblock %}
 

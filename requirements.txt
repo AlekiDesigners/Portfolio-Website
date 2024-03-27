@@ -1,0 +1,7 @@
+click==8.1.7
+Flask==2.0.1
+gunicorn==24.0
+itsdangerous==2.1.2
+Jinja2==2.1.5
+MarkupSafe==2.1.5
+Werkzeug==2.1.5

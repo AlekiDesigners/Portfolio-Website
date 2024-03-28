@@ -1,80 +1,40 @@
 {% extends "layout.html" %}
 {% block title %}Alex in Focus{% endblock %}
 {% block content %}
-<div class="logo-image">
-    <img src="{{ url_for('static', filename='images/cover1.jpg') }}" alt="Alex In Focus" />
-</div>
-<div class="home">
-    <div id="intro">
-        <p>I'm a data analyst adept in SQL, Python, Tableau, and Excel, delivering insights that drive informed decisions</p>
-        <ul class="actions">
-            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-        </ul>
+<div id="container">
+    <div class="logo-image">
+        <img id="banner" src="{{ url_for('static', filename='images/cover1.jpg') }}" alt="Banner 1">" />
     </div>
-
-    <!-- Header -->
-    <header id="header">
-        <a href="{{ url_for('home') }}" class="logo">Data Analyst</a>
-    </header>
-
-    <!-- Nav -->
-    <nav id="nav">
-        <ul class="links">
-            <li class="active"><a href="{{ url_for('home') }}">Projects</a></li>
-            <li><a href="{{ url_for('about') }}">About Me</a></li>
-            <li><a href="#footer" class="button">Contact Me</a></li>
-        </ul>
-        <ul class="icons">
-            <li><a href="https://www.linkedin.com/in/alexkwayne/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/AlekiDesigners" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-        </ul>
-    </nav>
-
-    <!-- Main -->
-    <div id="main">
-        <!-- Featured Post -->
-        <article class="post featured">
-            <header class="major">
-                <h2><a href="#">A world of data-driven insights<br />
-                SQL | Python | Tableau</a></h2>
-                <p>As a skilled data analyst, I transform raw data into actionable knowledge, guiding informed decisions. Explore a diverse range of projects that showcase my ability to extract, analyze, and visualize data, providing valuable insights that make a difference. Join me on this journey of uncovering the power of data.</p>
-            </header>
-            <a href="#" class="image main"><img src="{{ url_for('static', filename='images/fabio.jpg') }}" alt="" /></a>
-            <ul class="actions special">
+    <div class="home">
+        <div id="intro">
+            <p>I'm a data analyst adept in SQL, Python, Tableau, and Excel, delivering insights that drive informed decisions</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
-        </article>
-
-        <!-- Posts -->
-        <section class="posts">
-            <article>
-                <header>
-                    <h2><a href="#">House Sales Analysis<br />
-                        <i>King County, U.S.A(2014/2015)</i></a></h2>
+        </div>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/alexkwayne/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/AlekiDesigners" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+        <!-- Main -->
+        <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="#">A world of data-driven insights<br />
+                    SQL | Python | Tableau</a></h2>
+                    <p>As a skilled data analyst, I transform raw data into actionable knowledge, guiding informed decisions. Explore a diverse range of projects that showcase my ability to extract, analyze, and visualize data, providing valuable insights that make a difference. Join me on this journey of uncovering the power of data.</p>
                 </header>
-                <a href="#" class="image fit"><img src="{{ url_for('static', filename='images/indones.jpg') }}" alt="" /></a>
-                <p>The project analyses the captivating realm of house sales within King County, USA, for the years 2014 and 2015. Through meticulous examination of sale prices, property attributes, and geographical spread, I've unveiled intriguing trends that offer a profound understanding of the ever-shifting real estate landscape during this compelling two-year window.</p>
+                <a href="#" class="image main"><img id="banner" src="{{ url_for('static', filename='images/fabio.jpg') }}" alt="banner 5" /></a>
                 <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
                 </ul>
             </article>
-            <article>
-                <header>
-                    <h2><a href="#">The Titanic Analysis<br />
-                    <i>Deep Look Into the Titanic Survivors</i></a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{{ url_for('static', filename='images/pietro.jpg') }}" alt="" /></a>
-                <p>"The Titanic Analysis" presents a comprehensive and profound exploration of the survivors of the Titanic disaster. By meticulously dissecting passenger demographics, ticket classes, and available lifeboats, this study unveils nuanced insights into the factors that influenced survival rates. Through this detailed examination, a clearer understanding emerges of how socio-economic status, gender, and age played pivotal roles in the outcome of this historic tragedy.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
-        </section>
+        </div>
+        {% include "footer.html" %}
     </div>
-
-    {% include "footer.html" %}
 </div>
 {% endblock %}
-
 {% block scripts %}
 <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
 <script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Alex in Focus{% endblock %}
+{% block content %}
+<!-- Posts -->
+<section class="posts">
+  <div class="header-image">
+      <img id="banner" src="{{ url_for('static', filename='images/pspikes1.jpg') }}" alt="Banner 2">
+  </div>
+    <article>
+        <header>
+            <h2><a href="#">House Sales Analysis<br />
+                <i>King County, U.S.A(2014/2015)</i></a></h2>
+        </header>
+        <p>The project analyses the captivating realm of house sales within King County, USA, for the years 2014 and 2015. Through meticulous examination of sale prices, property attributes, and geographical spread, I've unveiled intriguing trends that offer a profound understanding of the ever-shifting real estate landscape during this compelling two-year window.</p>
+        <ul class="actions special">
+            <li><a href="#" class="button">Full Story</a></li>
+        </ul>
+    </article>
+    <article>
+        <header>
+            <h2><a href="#">The Titanic Analysis<br />
+            <i>Deep Look Into the Titanic Survivors</i></a></h2>
+        </header>
+        <a href="#" class="image fit"><img id="banner" src="{{ url_for('static', filename='images/pietro.jpg') }}" alt="banner 6" /></a>
+        <p>"The Titanic Analysis" presents a comprehensive and profound exploration of the survivors of the Titanic disaster. By meticulously dissecting passenger demographics, ticket classes, and available lifeboats, this study unveils nuanced insights into the factors that influenced survival rates. Through this detailed examination, a clearer understanding emerges of how socio-economic status, gender, and age played pivotal roles in the outcome of this historic tragedy.</p>
+        <ul class="actions special">
+            <li><a href="#" class="button">Full Story</a></li>
+        </ul>
+    </article>
+</section>
+{% endblock %}
